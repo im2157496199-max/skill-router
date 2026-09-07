@@ -15,6 +15,14 @@ Before routing, inspect the skills that the current Codex session exposes and an
 
 Treat the platform-provided available-skills list as authoritative. Do not assume legacy locations such as `~/.claude/skills` or `~/.agents/skills` exist. Never cache an inventory across sessions.
 
+### Independent repository exclusion
+
+Do not index, select, sequence, or otherwise manage skills from the
+`AI-Cinematic-Director-Skill` repository. That repository is deliberately
+independent from this master controller. Use it only when the user explicitly
+names it or explicitly asks for work in that repository; in that case, follow
+the user's request directly rather than routing it through this skill.
+
 ## 2. Understand the request
 
 Extract:

@@ -11,6 +11,9 @@ It is tailored for a Codex workflow and covers this companion library:
 - Blender scenes, assets, cameras, animation, rendering, and automation;
 - mixed film-to-Blender workflows.
 
+`AI-Cinematic-Director-Skill` is intentionally excluded from this controller.
+It remains an independent repository and is used only when explicitly named.
+
 ## Behavior
 
 1. Read the live available-skills inventory plus relevant project-local skills.
