@@ -1,6 +1,6 @@
 ---
 name: skill-router
-description: Use as the default entry point for any user request without an explicitly named skill. Inspect the available Codex skills and project-local skills, choose the smallest valid skill sequence, then execute the request with those skills. Particularly routes AI film/video/storyboard work to the AI film skills and Blender scene, asset, rendering, or automation work to the Blender skill. Do not use when the user explicitly invokes a skill, asks a non-task conversational question, or is already inside an active skill workflow.
+description: Use as the default entry point for any user request without an explicitly named skill. Inspect the available Codex skills and project-local skills, choose the smallest valid skill sequence, then execute the request with those skills. Particularly routes AI film/video/storyboard work, Blender work, and ComfyUI interior-design or renovation-visualization work. Do not use when the user explicitly invokes a skill, asks a non-task conversational question, or is already inside an active skill workflow.
 ---
 
 # Skill Router — Codex Master Controller
@@ -44,6 +44,7 @@ Routing hints for this library:
 |---|---|
 | AI short film, screenplay, shots, storyboards, characters, props, scenes, visual style, ComfyUI image/video workflow | relevant AI-film skill(s), then an image/video generation skill if the request requires actual media |
 | Blender models, scenes, cameras, animation, rendering, or Blender automation | Blender skill |
+| Interior design, room restyling, renovation visualization, room segmentation, or the StableDesign ComfyUI workflow | `interior-design-comfyui` |
 | A mixed film + Blender request | film pre-production/shot skill first, Blender skill second |
 | A request to install, create, update, or inspect skills | the platform's skill-management skill |
 

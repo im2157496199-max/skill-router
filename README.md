@@ -9,6 +9,8 @@ It is tailored for a Codex workflow and covers this companion library:
 - AI film production, directing, storyboard, character, prop, scene, and
   ComfyUI-oriented generation skills;
 - Blender scenes, assets, cameras, animation, rendering, and automation;
+- ComfyUI interior design, room restyling, depth/segmentation conditioning,
+  and renovation visualization;
 - mixed film-to-Blender workflows.
 
 `AI-Cinematic-Director-Skill` is intentionally excluded from this controller.
